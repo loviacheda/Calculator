@@ -1,0 +1,146 @@
+div.structure {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    font-size: 120%;
+    font-style: normal;
+    float: left;
+    max-width: 200px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: darkslateblue;
+}
+
+article {
+    font-size: 150%;
+    font-style: normal;
+    margin-left: 200px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 3px;
+}
+/*=============== BASIC ===============*/
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+}
+.calculator {
+    user-select: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    border: 1px solid #d2d2d2;
+    padding: 1px;
+    border-radius: 5px;
+    width: 400px;
+    font-family: Tahoma, sans-serif;
+}
+.title {
+    width: 100%;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+.calculator .title {
+    grid-column: 1/-1;
+}
+.item {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+    background: #fff;
+    color: #f5a900;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item:hover {
+    background: #f6f6f6;
+}
+.item:active {
+    opacity: 0.5;
+}
+.digit {
+    color: #494949;
+}
+.equal {
+    padding: 0;
+}
+.equal span {
+    display: block;
+    border-radius: 50%;
+    font-size: 26px;
+    padding: 4px 10px 5px 10px;
+    background: #f5a900;
+    color: #ffffff;
+}
+.equal:hover {
+    transition-duration: 0.4s;
+    background: #f5a900;
+}
+.backspace {
+    font-size: 26px;
+}
+.display{
+    grid-column: 1/-1;
+    padding: 10px;
+    height: 200px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-wrap: wrap;
+    overflow: hidden;
+    word-break: break-all;
+}
+/*=============== HISTORY ===============*/
+.history {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    overflow: hidden;;
+    overflow-y: auto;
+}
+.entry {
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
